@@ -14,7 +14,7 @@ def aspectjWeaverVersion = "1.9.22",
     allureSelenideVersion = "2.21.0",
     junitVersion = "5.9.3",
     slf4jVersion = "2.0.7",
-    appiumVersion = "9.3.0"
+    appiumVersion = "8.3.0"
     
 
 
