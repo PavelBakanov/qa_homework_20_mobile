@@ -21,16 +21,16 @@ public class BrowserstackDriver implements WebDriverProvider {
         caps.setCapability("browserstack.key", "6BbFx2UPgpeBxozc3esf");
 
         // Set URL of the application under test
-        //caps.setCapability("app", "bs://sample.app");
+        caps.setCapability("app", "bs://sample.app");
 
         // Specify device and os_version for testing
-        //caps.setCapability("device", "Google Pixel 3");
-        //caps.setCapability("os_version", "9.0");
+        caps.setCapability("device", "Google Pixel 3");
+        caps.setCapability("os_version", "9.0");
 
         // Set other BrowserStack capabilities
         caps.setCapability("project", "BrowserStack Sample");
         caps.setCapability("build", "browserstack-build-1");
-        caps.setCapability("name", "BrowserStack Sample");
+        caps.setCapability("name", "First-test-pixel-3");
 
         // Initialise the remote Webdriver using BrowserStack remote URL
         // and desired capabilities defined above
