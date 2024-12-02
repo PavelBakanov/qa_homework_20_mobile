@@ -24,8 +24,8 @@ public class BrowserstackDriver implements WebDriverProvider {
         //caps.setCapability("app", "bs://sample.app");
 
         // Specify device and os_version for testing
-        caps.setCapability("device", "Google Pixel 3");
-        caps.setCapability("os_version", "9.0");
+        //caps.setCapability("device", "Google Pixel 3");
+        //caps.setCapability("os_version", "9.0");
 
         // Set other BrowserStack capabilities
         /* caps.setCapability("project", "BrowserStack Sample");
