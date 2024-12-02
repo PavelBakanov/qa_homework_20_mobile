@@ -40,7 +40,7 @@ repositories {
 
 dependencies {
     testImplementation(
-             'org.aspectj:aspectjweaver:1.9.22',
+             "org.aspectj:aspectjweaver:1.9.22",
              "com.codeborne:selenide:$selenideVersion",
              "io.qameta.allure:allure-selenide:$allureSelenideVersion",
              "io.appium:java-client:$appiumVersion",
