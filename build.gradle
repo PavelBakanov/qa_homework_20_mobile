@@ -8,7 +8,7 @@ repositories {
     mavenCentral()
 }
 
-def aspectjWeaverVersion = "1.9.22.1",
+def aspectjWeaverVersion = "1.9.22",
     selenideVersion = "6.13.0",
     restAssuredVersion = "5.5.0",
     allureSelenideVersion = "2.21.0",
