@@ -8,7 +8,7 @@ repositories {
     mavenCentral()
 }
 
-def aspectjWeaver = "1.9.22",
+def aspectjWeaverVersion = "1.9.22",
     selenideVersion = "6.13.0",
     restAssuredVersion = "5.3.0",
     allureSelenideVersion = "2.21.0",
@@ -37,7 +37,7 @@ version = '1.0-SNAPSHOT'
 
 dependencies {
     testImplementation(
-             "org.aspectj:aspectjweaver:$aspectjWeaver",
+             "org.aspectj:aspectjweaver:$aspectjWeaverVersion",
              "com.codeborne:selenide:$selenideVersion",
              "io.qameta.allure:allure-selenide:$allureSelenideVersion",
              "io.appium:java-client:$appiumVersion",
