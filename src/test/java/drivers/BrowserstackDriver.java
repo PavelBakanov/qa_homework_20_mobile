@@ -28,9 +28,9 @@ public class BrowserstackDriver implements WebDriverProvider {
         //caps.setCapability("os_version", "9.0");
 
         // Set other BrowserStack capabilities
-        /* caps.setCapability("project", "BrowserStack Sample");
+        caps.setCapability("project", "BrowserStack Sample");
         caps.setCapability("build", "browserstack-build-1");
-        caps.setCapability("name", "BrowserStack Sample");*/
+        caps.setCapability("name", "BrowserStack Sample");
 
         // Initialise the remote Webdriver using BrowserStack remote URL
         // and desired capabilities defined above
