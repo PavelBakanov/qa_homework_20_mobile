@@ -14,20 +14,19 @@ def aspectjWeaver = "1.9.22",
     
 
 
-allure
-        {
-            report {
-                version.set(allureSelenideVersion)
-            }
-            adapter {
-                aspectjWeaver.set(true)
-                frameworks {
-                    junit5 {
-                        adapterVersion.set(allureSelenideVersion)
-                    }
-                }
+allure {
+    report {
+        version.set(allureSelenideVersion)
+    }
+    adapter {
+        aspectjWeaver.set(true)
+        frameworks {
+            junit5 {
+                adapterVersion.set(allureSelenideVersion)
             }
         }
+    }
+}
 
 group = 'ru.maxcong'
 version = '1.0-SNAPSHOT'
