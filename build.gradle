@@ -28,8 +28,8 @@ allure {
     }
 }
 
-group = 'ru.maxcong'
-version = '1.0-SNAPSHOT'
+//group = 'ru.maxcong'
+//version = '1.0-SNAPSHOT'
 
 
 repositories {
