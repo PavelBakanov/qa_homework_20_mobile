@@ -32,7 +32,7 @@ public class BrowserstackDriver implements WebDriverProvider {
         // Set URL of the application under test
         caps.setCapability("app", config.getApp());
 
-        // Specify device and os_version for testing
+        // Specify device and os_version for testing!
         caps.setCapability("device", config.getDevice());
         caps.setCapability("os_version", config.getOsVersion());
 
