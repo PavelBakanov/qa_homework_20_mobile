@@ -4,7 +4,6 @@ import org.aeonbits.owner.Config;
 
 @Config.Sources({
         "classpath:properties/${deviceHost}.properties",
-        "classpath:properties/emulation.properties"
 })
 public interface EmulationConfig extends Config {
 
