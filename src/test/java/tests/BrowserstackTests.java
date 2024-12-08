@@ -17,7 +17,7 @@ public class BrowserstackTests extends TestBase {
             WikipediaMainScreen.searchQuery("Appium");
         });
         step("Проверить, что статьи найдены", () ->
-                WikipediaSearchResultScreen.checkSearchResult()
+            WikipediaSearchResultScreen.checkSearchResult()
         );
     }
 
