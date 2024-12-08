@@ -10,7 +10,7 @@ import screens.components.ContinueButtonComponent;
 import static io.qameta.allure.Allure.step;
 
 
-public class SearchTests extends TestBase {
+public class EmulationTests extends TestBase {
     @Test
     void onboardingScreenTest()
     {
