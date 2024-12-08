@@ -21,8 +21,6 @@ public class TestBase {
             Configuration.browser = EmulationDriver.class.getName();
         } else if (System.getProperty("deviceHost").equals("browserstack")) {
             Configuration.browser = BrowserstackDriver.class.getName();
-        } else {
-            throw new RuntimeException("deviceHost is null");
         }
 
         Configuration.browserSize = null;
