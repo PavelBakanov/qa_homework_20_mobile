@@ -1,4 +1,4 @@
-package screens.components;
+package screens.emulation.components;
 
 import com.codeborne.selenide.SelenideElement;
 

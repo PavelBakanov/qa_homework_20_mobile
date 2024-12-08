@@ -1,4 +1,4 @@
-package screens;
+package screens.emulation;
 
 import com.codeborne.selenide.SelenideElement;
 
@@ -14,6 +14,4 @@ public class ReadingListsScreen {
         String text = $(joinWikipediaTextLocator).getText();
         assertThat(text.contains("Join Wikipedia"));
     }
-
-
 }

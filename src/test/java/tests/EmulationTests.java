@@ -1,15 +1,16 @@
 package tests;
 
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import screens.DataAndPrivacyScreen;
-import screens.ExploreScreen;
-import screens.LanguageScreen;
-import screens.ReadingListsScreen;
-import screens.components.ContinueButtonComponent;
+import screens.emulation.DataAndPrivacyScreen;
+import screens.emulation.ExploreScreen;
+import screens.emulation.LanguageScreen;
+import screens.emulation.ReadingListsScreen;
+import screens.emulation.components.ContinueButtonComponent;
 
 import static io.qameta.allure.Allure.step;
 
-
+@Tag("emulation")
 public class EmulationTests extends TestBase {
     @Test
     void onboardingScreenTest()
