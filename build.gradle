@@ -13,8 +13,10 @@ def aspectjWeaverVersion = "1.9.22",
     allureSelenideVersion = "2.17.3",
     junitVersion = "5.9.3",
     slf4jVersion = "2.0.7",
-    appiumVersion = "8.3.0"
-
+    appiumVersion = "8.3.0",
+    ownerVersion = "1.0.12",
+    commonsIoVersion = '2.14.0',
+    assertjVersion = "3.26.3"
 
 
 allure {
@@ -43,7 +45,9 @@ dependencies {
             "io.rest-assured:rest-assured:$restAssuredVersion",
             "org.junit.jupiter:junit-jupiter:$junitVersion",
             "org.slf4j:slf4j-simple:$slf4jVersion",
-            'org.aeonbits.owner:owner:1.0.12'
+            "org.aeonbits.owner:owner:$ownerVersion",
+            "commons-io:commons-io:$commonsIoVersion",
+            "org.assertj:assertj-core:$assertjVersion"
     )
 }
 
