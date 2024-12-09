@@ -1,37 +1,32 @@
 package tests;
 
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
-import screens.browserstack.WikipediaErrorScreen;
-import screens.browserstack.WikipediaMainScreen;
-import screens.browserstack.WikipediaSearchResultScreen;
-import screens.browserstack.components.SearchInputComponent;
+import screens.ErrorScreen;
+import screens.MainScreen;
+import screens.SearchResultScreen;
 
-import static io.qameta.allure.Allure.step;
-
+@DisplayName("Тесты Browserstack")
 @Tag("browserstack")
 public class BrowserstackTests extends TestBase {
+
+    private final MainScreen mainScreen = new MainScreen();
+    private final SearchResultScreen searchResultScreen = new SearchResultScreen();
+    private final ErrorScreen errorScreen = new ErrorScreen();
+
+    @DisplayName("Тест на успешный поиск")
     @Test
     void androidSuccessfulSearchTest() {
-        step("Напечатать в поиске слово 'Appium'", () -> {
-            WikipediaMainScreen.searchQuery("Appium");
-        });
-        step("Проверить, что статьи найдены", () ->
-                WikipediaSearchResultScreen.checkSearchResult()
-        );
+                mainScreen.searchQuery("Appium");
+                searchResultScreen.checkSearchResult();
     }
 
+    @DisplayName("Тест на неуспешное открытие статьи")
     @Test
     void androidUnsuccessfulOpenArticleTest() {
-        step("Напечатать в поиске слово 'Japan'", () -> {
-            WikipediaMainScreen.searchQuery("Japan");
-        });
-        step("Попытаться открыть самую первую статью", () -> {
-            WikipediaSearchResultScreen.openArticle();
-        });
-
-        step("Проверить, что произошла ошибка", () -> {
-            WikipediaErrorScreen.checkError("An error occurred");
-        });
+                mainScreen.searchQuery("Japan");
+                searchResultScreen.openArticle();
+                errorScreen.checkError("An error occurred");
     }
 }

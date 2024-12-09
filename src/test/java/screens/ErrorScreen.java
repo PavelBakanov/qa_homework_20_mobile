@@ -1,16 +1,18 @@
-package screens.browserstack;
+package screens;
 
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Selenide.$;
 import static io.appium.java_client.AppiumBy.id;
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class WikipediaErrorScreen {
+public class ErrorScreen {
 
-    private static final SelenideElement errorFieldElement = $(id("org.wikipedia.alpha:id/view_wiki_error_text"));
+    private final SelenideElement errorFieldElement = $(id("org.wikipedia.alpha:id/view_wiki_error_text"));
 
-    public static void checkError(String textError) {
+    @Step("Проверить, что произошла ошибка")
+    public void checkError(String textError) {
 
         assertThat(errorFieldElement).isNotNull();
 
