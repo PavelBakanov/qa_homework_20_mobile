@@ -10,7 +10,7 @@ public class ContinueButtonComponent {
 
     private final SelenideElement continueButtonLocator = $(id("org.wikipedia.alpha:id/fragment_onboarding_forward_button"));
 
-    @Step("Нажать на кнопку Continue!")
+    @Step("Нажать на кнопку Continue")
     public void clickContinueButton() {
         $(continueButtonLocator).click();
     }
