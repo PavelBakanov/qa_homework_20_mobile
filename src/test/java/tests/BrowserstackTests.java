@@ -15,7 +15,7 @@ public class BrowserstackTests extends TestBase {
     private final SearchResultScreen searchResultScreen = new SearchResultScreen();
     private final ErrorScreen errorScreen = new ErrorScreen();
 
-    @DisplayName("Тест на успешный поиск!")
+    @DisplayName("Тест на успешный поиск")
     @Test
     void androidSuccessfulSearchTest() {
                 mainScreen.searchQuery("Appium");
