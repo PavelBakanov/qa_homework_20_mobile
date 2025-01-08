@@ -38,8 +38,7 @@
 Для запуска локально в терминале нужно прописать:
  - ./gradlew clean crowdtesting_test -Denv=local
 
-Так же тесты можно запустить через [Jenkins](https://jenkins.autotests.cloud/job/qa_diplom_mobile/) 
-Они запустятся через BrowserStack
+Так же тесты можно запустить через [Jenkins](https://jenkins.autotests.cloud/job/qa_diplom_mobile/). Они запустятся через BrowserStack
 <img src="images/Jenkins.png" width="900">
 
 ---
