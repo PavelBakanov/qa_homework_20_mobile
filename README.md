@@ -46,7 +46,22 @@ Windows:
 Mac:
 export ANDROID_HOME=/Users/stanislav/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
-source ~/.bash_profile     
+source ~/.bash_profile
+- В Android Studio -> SDK Manager скачать 11 андроид (если не скачан по умолчанию)
+- В AVD Manager скачать образ Pixel 4 для 11 андроида (если не скачан по умолчанию)
+- Запустить эмулятор телефона (Pixel 4, android 11)
+- Установить [node.js](https://nodejs.org/en/download)
+- Установить [Appium Server](https://github.com/appium/appium)
+- Открыть консоль и прописать там:
+npm install -g appium@next для установки Appium Server и appium driver install uiautomator2 для установки uiautomator2
+- Установить [Appium Ispector](https://github.com/appium/appium-inspector)
+- Открыть его, и в качестве конфига прописать там:
+- {
+  "platformName": "Android",
+  "appium:deviceName": "Pixel 4 API 30",
+  "appium:automationName": "UiAutomator2"
+  }
+- Запустить Appium Server командой из консоли appium server --base-path /wd/hub
 
 Так же тесты можно запустить через [Jenkins](https://jenkins.autotests.cloud/job/qa_diplom_mobile/). Они запустятся через BrowserStack
 <img src="images/Jenkins.png" width="900">
