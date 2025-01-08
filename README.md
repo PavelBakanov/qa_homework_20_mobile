@@ -35,8 +35,18 @@
 <a id="launch"></a>
 ## <a name="Запуск">**Запуск**</a>
 
-Для запуска локально в терминале нужно прописать:
- - ./gradlew clean crowdtesting_test -Denv=local
+Для запуска локально в терминале нужно:
+ - Установить [android studio](https://developer.android.com/studio)
+ - Прописать настройки:
+Параметры Path:
+Windows:
+%ANDROID_HOME%\tools
+%ANDROID_HOME%\tools\bin
+%ANDROID_HOME%\platform-tools
+Mac:
+export ANDROID_HOME=/Users/stanislav/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+source ~/.bash_profile     
 
 Так же тесты можно запустить через [Jenkins](https://jenkins.autotests.cloud/job/qa_diplom_mobile/). Они запустятся через BrowserStack
 <img src="images/Jenkins.png" width="900">
