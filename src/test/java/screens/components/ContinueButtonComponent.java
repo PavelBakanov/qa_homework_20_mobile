@@ -12,6 +12,6 @@ public class ContinueButtonComponent {
 
     @Step("Нажать на кнопку Continue")
     public void clickContinueButton() {
-        $(continueButtonLocator).click();
+        continueButtonLocator.click();
     }
 }

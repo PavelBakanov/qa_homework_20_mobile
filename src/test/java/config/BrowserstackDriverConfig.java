@@ -14,7 +14,6 @@ import org.aeonbits.owner.Config;
         String getBrowserstackKey();
 
         @Key("app")
-        @DefaultValue("bs://sample.app")
         String getApp();
 
         @Key("remoteUrl")

@@ -13,7 +13,7 @@ public class ReadingListsScreen {
 
     @Step("Проверить наличие текста 'Join Wikipedia' в конкретном месте")
     public void checkJoinWikipediaText() {
-        String text = $(joinWikipediaTextLocator).getText();
+        String text = joinWikipediaTextLocator.getText();
         assertThat(text.contains("Join Wikipedia"));
     }
 }

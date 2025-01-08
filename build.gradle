@@ -1,6 +1,7 @@
 plugins {
     id 'java-library'
     id 'io.qameta.allure' version '2.9.6'
+    id "io.freefair.lombok" version "6.0.0-m2"
 }
 
 repositories {
@@ -47,7 +48,9 @@ dependencies {
             "org.slf4j:slf4j-simple:$slf4jVersion",
             "org.aeonbits.owner:owner:$ownerVersion",
             "commons-io:commons-io:$commonsIoVersion",
-            "org.assertj:assertj-core:$assertjVersion"
+            "org.assertj:assertj-core:$assertjVersion",
+            "io.rest-assured:json-schema-validator:$restAssuredVersion"
+
     )
 }
 
@@ -66,14 +69,9 @@ tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
 
-task browserstack(type: Test) {
+task wikipedia_test(type: Test) {
     useJUnitPlatform {
-        includeTags("browserstack")
+        includeTags("wikipedia")
     }
 }
 
-task emulation (type: Test) {
-    useJUnitPlatform {
-        includeTags("emulation")
-    }
-}
