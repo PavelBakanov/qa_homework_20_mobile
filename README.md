@@ -1,4 +1,4 @@
-# Тесты приложения Wikipedia на эмуляторе Android устройства и ферме мобильных устройств [browserstack.com](https://(https://www.browserstack.com/) в качестве дипломной работы для qa.guru
+# Тесты приложения Wikipedia на эмуляторе Android устройства и ферме мобильных устройств [browserstack.com](https://www.browserstack.com/) в качестве дипломной работы для qa.guru
 ## Содержание
 
 * <a href="#tests">Что делают тесты?</a>
