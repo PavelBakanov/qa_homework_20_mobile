@@ -67,11 +67,11 @@
 <h1 align="center">Видео прохождения тестов</h1>
 
 <p align="center">
-<img title="testResultsVideo1" src="images/videos/testResultsVideo1.gif" width="700" height="400"  alt="video">   
+<img title="testResultsVideo1" src="images/videos/testResultsVideo1.gif" width="400" height="700"  alt="video">   
 </p>
 <p align="center">
-<img title="testResultsVideo2" src="images/videos/testResultsVideo2.gif" width="700" height="400"  alt="video">   
+<img title="testResultsVideo2" src="images/videos/testResultsVideo2.gif" width="400" height="700"  alt="video">   
 </p>
 <p align="center">
-<img title="testResultsVideo3" src="images/videos/testResultsVideo3.gif" width="700" height="400"  alt="video">   
+<img title="testResultsVideo3" src="images/videos/testResultsVideo3.gif" width="400" height="700"  alt="video">   
 </p>
