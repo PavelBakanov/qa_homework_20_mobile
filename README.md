@@ -64,7 +64,7 @@ npm install -g appium@next для установки Appium Server и appium dri
 - Запустить Appium Server командой из консоли appium server --base-path /wd/hub
 - В терминале IDE запустить проект командой ./gradlew clean wikipedia_test -DdeviceHost=emulation 
 
-Так же тесты можно запустить через [Jenkins](https://jenkins.autotests.cloud/job/qa_diplom_mobile/). Они запустятся через BrowserStack
+Так же тесты можно запустить через [Jenkins](https://jenkins.autotests.cloud/job/qa_diplom_mobile/). Они запустятся на ферме BrowserStack
 <img src="images/Jenkins.png" width="900">
 
 ---
