@@ -2,6 +2,7 @@ package helpers;
 
 import config.BrowserstackDriverConfig;
 import io.restassured.http.ContentType;
+import io.restassured.path.json.JsonPath;
 import models.UploadAppResponseModel;
 import models.UploadedAppsListResponseModel;
 import org.aeonbits.owner.ConfigFactory;
@@ -45,26 +46,28 @@ public class Browserstack {
     }
 
     public String checkUploadedAppsList() {
-        List<UploadedAppsListResponseModel> response = given()
-                .auth().preemptive().basic(config.getBrowserstackUser(), config.getBrowserstackKey())
 
+        String responseString = given()
+                .auth().preemptive().basic(config.getBrowserstackUser(), config.getBrowserstackKey())
                 .when()
                 .get("https://api-cloud.browserstack.com/app-automate/recent_apps")
-
                 .then()
                 .statusCode(200)
                 .log().all()
                 .extract()
-                .jsonPath()
-                .getList(".", UploadedAppsListResponseModel.class);
+                .asString();
 
+        if (!responseString.contains("No results found")) {
+            List<UploadedAppsListResponseModel> responseJson =
+                    new JsonPath(responseString).getList(".", UploadedAppsListResponseModel.class);
 
-        for (UploadedAppsListResponseModel app : response) {
-            if (app.getAppName().equals("app-alpha-universal-release.apk")) {
-                return app.getAppUrl();
+            for (UploadedAppsListResponseModel app : responseJson) {
+                if (app.getAppName().equals("app-alpha-universal-release.apk")) {
+                    return app.getAppUrl();
+                }
             }
         }
 
         return uploadAppToBrowserstack().getAppUrl();
-    }
+}
 }
