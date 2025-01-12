@@ -85,7 +85,7 @@ npm install -g appium@next для установки Appium Server и appium dri
 <a id="allureTestOps"></a>
 ## <a name="Интеграция с Allure TestOps">**Интеграция с Allure TestOps**</a>
 
-Есть интеграция с Allure TestOps, где можно посмотреть еще ручные тесты
+Есть интеграция с [Allure TestOps](https://allure.autotests.cloud/project/4553/dashboards), где можно посмотреть еще ручные тесты
 
 <img src="images/TestOps.png" width="900">
 
