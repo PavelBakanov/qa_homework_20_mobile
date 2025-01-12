@@ -5,6 +5,7 @@
 * <a href="#tools">Технологии</a>
 * <a href="#launch">Запуск</a>
 * <a href="#allure">Отчет в Allure</a>
+* <a href="#allureTestOps">Интеграция с Allure TestOps</a>
 * <a href="#telegramBot">Бот в Telegram</a>
 * <a href="#video">Видео прохождения тестов</a>
 
@@ -28,7 +29,8 @@
 <a href="https://github.com/allure-framework/allure2"><img src="images/logo/Allure.svg" width="50" height="50" alt="Allure"/></a>  
 <a href="https://www.jenkins.io/"><img src="images/logo/Jenkins.svg" width="50" height="50"  alt="Jenkins"/></a>  
 <a href="https://appium.io/"><img src="images/logo/Appium.svg" width="50" height="50"  alt="Appium"/></a>   
-<a href="https://rest-assured.io/"><img src="images/logo/RestAssured.svg" width="50" height="50"  alt="RestAssured"/></a>  
+<a href="https://rest-assured.io/"><img src="images/logo/RestAssured.svg" width="50" height="50"  alt="RestAssured"/></a>
+<a href="(https://qameta.io/)"><img src="images/logo/AllureTestOps.svg" width="50" height="50"  alt="AllureTestOps"/></a>
 </p>
 
 ---
@@ -77,6 +79,15 @@ npm install -g appium@next для установки Appium Server и appium dri
 ### На скриншоте один из результатов выполнения тестов:
 
 <img src="images/AllureReport.png" width="900">
+
+---
+
+<a id="allureTestOps"></a>
+## <a name="Интеграция с Allure TestOps">**Интеграция с Allure TestOps**</a>
+
+Есть интеграция с Allure TestOps, где можно посмотреть еще ручные тесты
+
+<img src="images/TestOps.png" width="900">
 
 ---
 
