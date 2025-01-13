@@ -15,11 +15,6 @@ public class SearchResultScreen {
 
     private final SelenideElement noResultsSelector = $(id("org.wikipedia.alpha:id/results_text"));
 
-    @Step("Попытаться открыть самую первую статью")
-    public void openArticle() {
-        articlesListElements.first().click();
-    }
-
     @Step("Проверить, что статьи найдены")
     public void checkSearchResult() {
         assertThat(articlesListElements).size().isGreaterThan(0);
