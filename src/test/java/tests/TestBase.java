@@ -36,14 +36,15 @@ public class TestBase {
     @AfterEach
     void addAttachments() {
         Attach attach = new Attach();
-        if (System.getProperty("deviceHost").equals("browserstack")) {
-            String sessionId = Selenide.sessionId().toString();
-            attach.addVideo(sessionId);
-        }
+        String sessionId = Selenide.sessionId().toString();
+        
         if (System.getProperty("deviceHost").equals("emulation")) {
             attach.screenshotAs("Last screenshot");
         }
         Attach.pageSource();
         closeWebDriver();
+                if (System.getProperty("deviceHost").equals("browserstack")) {
+            attach.addVideo(sessionId);
+        }
     }
 }
